@@ -1,0 +1,23 @@
+body {
+  margin : 0;
+  text-align : center;
+  background : black;
+  color : mediumpurple;
+}
+
+.cell {
+  width : 14%;
+  font-size : 5vh;
+  display : inline-block;
+  box-sizing: border-box;
+  border : solid 1px mediumpurple;
+}
+
+.header {
+  font-size : 3vh;
+}
+
+.today {
+  color : black;
+  background : mediumpurple;
+}
