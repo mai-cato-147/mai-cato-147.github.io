@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>Password Generator</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="icon" href="icon.png">
+	<link rel="apple-touch-icon" href="icon.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" integrity="sha256-MBffSnbbXwHCuZtgPYiwMQbfE7z+GOZ7fBPCNB06Z98=" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-theme="dark">
+	<div class="container">
+		<header class="text-center fs-1" role="button" onclick="onHeaderClicked()">Password Generator</header>
+
+		<main>
+			<div class="my-3 fs-4">
+				<label for="length">文字数</label>
+				<input id="length" class="form-control" type="number" tabindex="10" oninput="onLengthChanged()">
+				<input id="lengthRange" class="form-range" type="range" min="1" max="100" tabindex="11" oninput="onLengthRangeChanged()">
+			</div>
+
+			<div class="my-3">
+				<div class="form-check form-switch fs-4">
+					<label class="form-check-label" for="useNumber">数字</label>
+					<input id="useNumber" class="form-check-input" type="checkbox" role="switch" tabindex="20" onchange="onCheckBoxChanged('includedNumber', this.checked)">
+				</div>
+				<input id="includedNumber" class="form-control" type="text" tabindex="21">
+			</div>
+
+			<div class="my-3">
+				<div class="form-check form-switch fs-4">
+					<label class="form-check-label" for="useLower">小文字</label>
+					<input id="useLower" class="form-check-input" type="checkbox" role="switch" tabindex="30" onchange="onCheckBoxChanged('includedLower', this.checked)">
+				</div>
+				<input id="includedLower" class="form-control" type="text" tabindex="31">
+			</div>
+
+			<div class="my-3">
+				<div class="form-check form-switch fs-4">
+					<label class="form-check-label" for="useUpper">大文字</label>
+					<input id="useUpper" class="form-check-input" type="checkbox" role="switch" tabindex="40" onchange="onCheckBoxChanged('includedUpper', this.checked)">
+				</div>
+				<input id="includedUpper" class="form-control" type="text" tabindex="41">
+			</div>
+
+			<div class="my-3">
+				<div class="form-check form-switch fs-4">
+					<label class="form-check-label" for="useSymbol">記号</label>
+					<input id="useSymbol" class="form-check-input" type="checkbox" role="switch" tabindex="50" onchange="onCheckBoxChanged('includedSymbol', this.checked)">
+				</div>
+				<input id="includedSymbol" class="form-control" type="text" tabindex="51">
+			</div>
+
+			<div class="text-center my-3">
+				<button class="btn btn-outline-primary btn-lg col-4" tabindex="60" onclick="onGenerateButtonPressed()">作成</button>
+				<button class="btn btn-outline-primary btn-lg col-3" tabindex="61" onclick="onResetButtonPressed()">初期化</button>
+				<button class="btn btn-outline-primary btn-lg col-4" tabindex="62" onclick="onCopyButtonPressed()">コピー</button>
+			</div>
+
+			<div class="my-3">
+				<textarea id="password" class="form-control" type="text" rows="2" tabindex="70" placeholder="JavaScriptを有効にしてください！"></textarea>
+			</div>
+
+			<div id="alertSuccess" class="alert alert-success" role="alert"></div>
+			<div id="alertDanger" class="alert alert-danger" role="alert"></div>
+		</main>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+</html>
