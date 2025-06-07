@@ -1,0 +1,12 @@
+body, input, select {
+	font-size: 25px;
+	text-align: center;
+}
+
+.button {
+	font-size: 30px;
+}
+
+a {
+	font-size: 14px;
+}

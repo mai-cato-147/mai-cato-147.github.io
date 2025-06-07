@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>電子レンジタイマー計算機</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="title">電子レンジタイマー計算機</div>
+
+  <br>
+
+  <div class="line">元のワット数は？</div>
+
+  <select id="origW">
+    <option value="100">100</option>
+    <option value="200">200</option>
+    <option value="300">300</option>
+    <option value="400">400</option>
+    <option value="500">500</option>
+    <option value="600" selected>600</option>
+    <option value="700">700</option>
+    <option value="800">800</option>
+    <option value="900">900</option>
+    <option value="1000">1000</option>
+    <option value="1100">1100</option>
+    <option value="1200">1200</option>
+    <option value="1300">1300</option>
+    <option value="1400">1400</option>
+    <option value="1500">1500</option>
+  </select>
+
+  <span>W</span>
+
+  <div class="line">元の時間は？</div>
+
+  <select id="origMin">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+  </select>
+
+  <span>分</span>
+
+  <select id="origSec">
+    <option value="0">00</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+    <option value="50">50</option>
+  </select>
+
+  <span>秒</span>
+
+  <div class="line">何ワットにする？</div>
+
+  <select id="targetW">
+    <option value="100">100</option>
+    <option value="200">200</option>
+    <option value="300">300</option>
+    <option value="400">400</option>
+    <option value="500">500</option>
+    <option value="600">600</option>
+    <option value="700">700</option>
+    <option value="800" selected>800</option>
+    <option value="900">900</option>
+    <option value="1000">1000</option>
+    <option value="1100">1100</option>
+    <option value="1200">1200</option>
+    <option value="1300">1300</option>
+    <option value="1400">1400</option>
+    <option value="1500">1500</option>
+  </select>
+
+  <span>W</span>
+
+  <br><br>
+
+  <div id="result">ここに計算結果が表示されます</div>
+
+  <br>
+
+  <input class="button" type="button" onclick="calc()" value="計算">
+
+  <script src="script.js"></script>
+</body>
+</html>
