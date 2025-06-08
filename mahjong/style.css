@@ -20,6 +20,7 @@ table {
 
 td {
 	border: 1px solid;
+	touch-action: manipulation;
 }
 
 td:hover {
