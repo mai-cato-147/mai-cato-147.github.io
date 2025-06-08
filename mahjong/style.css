@@ -15,3 +15,7 @@ table {
 td {
 	border: 1px solid;
 }
+
+td:hover {
+	background: greenyellow;
+}
