@@ -3,11 +3,6 @@ body {
 	margin: 0;
 	text-align: center;
 	vertical-align: middle;
-
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	touch-action: manipulation;
 }
 
 table {
@@ -15,12 +10,10 @@ table {
 	border-collapse: collapse;
 	table-layout: fixed;
 	width: 100%;
-	touch-action: manipulation;
 }
 
 td {
 	border: 1px solid;
-	touch-action: manipulation;
 }
 
 td:hover {
