@@ -5,7 +5,6 @@ body {
 	user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
-	touch-action: manipulation;
 }
 
 table {
@@ -13,13 +12,11 @@ table {
 	border-spacing: 0;
 	border-collapse: separate;
 	table-layout: fixed;
-	touch-action: manipulation;
 	width: 100%;
 }
 
 td {
 	border: 1px solid;
-	touch-action: manipulation;
 }
 
 tr:nth-of-type(even) {
