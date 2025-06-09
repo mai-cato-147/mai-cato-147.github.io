@@ -1,5 +1,4 @@
 body {
-	font-size: 2vw;
 	margin: 0;
 	text-align: center;
 	vertical-align: middle;
@@ -28,6 +27,14 @@ td:active {
 
 td:hover {
 	background: greenyellow;
+}
+
+.font-size-small {
+	font-size: 2vw;
+}
+
+.font-size-medium {
+	font-size: 3vw;
 }
 
 .sticky {
