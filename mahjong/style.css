@@ -20,10 +20,6 @@ td {
 	border: 1px solid;
 }
 
-td:hover {
-	background: greenyellow;
-}
-
 tr:nth-of-type(even) {
 	background: white;
 }
