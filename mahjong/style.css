@@ -16,9 +16,15 @@ table {
 }
 
 td {
+	background: white;
 	border: 1px solid;
 }
 
 td:hover {
 	background: greenyellow;
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
 }
