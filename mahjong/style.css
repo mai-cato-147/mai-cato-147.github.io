@@ -17,16 +17,19 @@ table {
 }
 
 td {
-	background: white;
 	border: 1px solid;
-}
-
-td:active {
-	background: greenyellow;
 }
 
 td:hover {
 	background: greenyellow;
+}
+
+tr:nth-of-type(even) {
+	background: white;
+}
+
+tr:nth-of-type(odd) {
+	background: aliceblue;
 }
 
 .font-size-small {
