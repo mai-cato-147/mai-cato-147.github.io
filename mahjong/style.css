@@ -31,12 +31,24 @@ tr:nth-of-type(odd) {
 	break-before: page;
 }
 
-.font-size-small {
-	font-size: 2vw;
+@media screen and (orientation: landscape) {
+	.font-size-small {
+		font-size: 1.5vw;
+	}
+
+	.font-size-medium {
+		font-size: 1.5vw;
+	}
 }
 
-.font-size-medium {
-	font-size: 3vw;
+@media screen and (orientation: portrait) {
+	.font-size-small {
+		font-size: 2vw;
+	}
+
+	.font-size-medium {
+		font-size: 3vw;
+	}
 }
 
 .sticky {
