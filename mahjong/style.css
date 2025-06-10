@@ -27,6 +27,10 @@ tr:nth-of-type(odd) {
 	background: aliceblue;
 }
 
+.break-before {
+	break-before: page;
+}
+
 .font-size-small {
 	font-size: 2vw;
 }
