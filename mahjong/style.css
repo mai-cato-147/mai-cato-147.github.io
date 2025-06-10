@@ -51,7 +51,9 @@ tr:nth-of-type(odd) {
 	}
 }
 
-.sticky {
+@media screen {
+	.sticky {
 	position: sticky;
 	top: 0;
+}
 }
