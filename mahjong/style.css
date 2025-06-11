@@ -27,10 +27,6 @@ tr:nth-of-type(odd) {
 	background: aliceblue;
 }
 
-tr:hover, tr:active {
-	background: cyan;
-}
-
 .break-before {
 	break-before: page;
 }
