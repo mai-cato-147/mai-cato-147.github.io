@@ -27,7 +27,7 @@ tr:nth-of-type(odd) {
 	background: aliceblue;
 }
 
-tr:hover {
+tr:hover, tr:active {
 	background: cyan;
 }
 
