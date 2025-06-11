@@ -19,6 +19,10 @@ td {
 	border: 1px solid;
 }
 
+tr:hover {
+	background: cyan;
+}
+
 tr:nth-of-type(even) {
 	background: white;
 }
